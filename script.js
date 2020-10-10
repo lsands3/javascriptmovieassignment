@@ -22,11 +22,30 @@ function printMovies () {
 //print out to console, only the movies that has a rating higher than rating(argument)
 //print out the total number of matches
 function highRatings (rating) {
+    var newCount = 0;
+    console.log("Printing movies that have a higher rating than " + rating);
+    for (var i = 0; i < allMovies.length; i++) {
+        if (allMovies[i].rating > rating) {
+            console.log(i);
+            newCount++;
+        }
+    }
+    console.log(newCount);
 
 }
 
 //Toggle the 'haveWatched' property of the specified movie 
 function changeWatched (title) {
+    console.log("Changing the status of the movie...");
+    for (var i = 0; i < allMovies.length; i++) {
+        if (allMovies[i].title == title) {
+            if (allMovies[i].havewatched == "true") {
+                allMovies[i].havewatched == "false";
+            } else {
+                allMovies[i].havewatched == "true";
+            }
+        }
+    }
   
 }
 
