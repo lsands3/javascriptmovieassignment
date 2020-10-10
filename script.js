@@ -7,16 +7,16 @@ function Movie(title, rating, havewatched) {
 
 //add a movie OBJECT to the allMovies array
 function addMovie (movie) {
-    for (i = 0; i < array.length; i++) { 
-        console.log(array[i]); 
-    }
+
 }
 
 //iterate through all elements of allMovies array
 //print out to console in a correct format
 //print out the total number of movies in allMovies array
 function printMovies () {
- 
+    for (i = 0; i < array.length; i++) { 
+        console.log(array[i]); 
+    }
 }
 
 //print out to console, only the movies that has a rating higher than rating(argument)
